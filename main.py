@@ -10,7 +10,7 @@ def main():
     t.pendown()
     t.color("blue")
     t.speed(30)
-    draw_star(t, 360)
+    draw_star(t, 500)
     turtle.done()
 
 
@@ -25,7 +25,7 @@ def draw_star(turtle_obj, size):
         turtle_obj.forward(size)
         # recursive call
         draw_star(turtle_obj, size / 3)
-        turtle_obj.left(216)
+        turtle_obj.left(216)  # the bearing - change this and the range for different shapes
         turtle_obj.end_fill()
 
 
